@@ -12,7 +12,7 @@ const  useHttp = (requestConfig, applyData) => {
         requestConfig.url, {
           method : requestConfig.method ? requestConfig.method : "GET",
           header : requestConfig.header ? requestConfig.header : {},
-          body : requestConfig.body ? JSON.stringify(requestConfig.body) : requestConfig.body
+          body : requestConfig.body ? JSON.stringify(requestConfig.body) : null
         }
       );
 
